@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>faq</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>text blocks</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
   </head>
   <body>
     <section class="text-blocks">
       <div class="text-blocks_wrapper">
         <div class="text-blocks_block_wrapper">
-          <img src="womanmusic.png" alt="" class="blocks_img" />
+          <img src="https://i.ibb.co/CPSBVzY/womanmusic.png" alt="" class="blocks_img" />
           <div class="block_text">
             <div class="slash_text_wrapper">
               <span class="block_slash"></span>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="text-blocks_block_wrapper reverse_items">
-          <img src="womanfitness.png" alt="" class="blocks_img" />
+          <img src="https://i.ibb.co/VpVJHg0/womanfitness.png" alt="" class="blocks_img" />
           <div class="block_text">
             <div class="slash_text_wrapper">
               <span class="block_slash short_slash"></span>
@@ -65,5 +65,148 @@
         </div>
       </div>
     </section>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap');
+      p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+      .slash_text_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 17px;
+        flex-wrap: nowrap;
+      }
+      .block_slash {
+        width: 6px;
+        height: 48px;
+        background: #ffbf37;
+      }
+      .faq_title_text {
+        color: #010101;
+        font-family: 'Work Sans';
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        white-space: nowrap;
+      }
+      .text-blocks {
+        width: 100%;
+      }
+      .text-blocks_wrapper {
+        margin: 0 auto;
+        padding: 60px 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+      }
+      .text-blocks_block_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      .block_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        max-width: 540px;
+      }
+      .blocks_img {
+        width: 480px;
+        height: 319px;
+      }
+
+      .blocks_title_text {
+        color: #010101;
+        font-family: 'Work Sans';
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .block_text_texts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .block_text_item {
+        color: #010101;
+        font-family: 'Work Sans';
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .reverse_items {
+        flex-direction: row-reverse;
+      }
+      @media (max-width: 1500px) {
+        .text-blocks_wrapper {
+          padding: 60px 100px;
+        }
+      }
+      @media (max-width: 1250px) {
+        .text-blocks_wrapper {
+          padding: 30px 50px;
+        }
+      }
+      @media (max-width: 1180px) {
+        .text-blocks_wrapper {
+          padding: 30px 20px;
+        }
+      }
+      @media (max-width: 1000px) {
+        .text-blocks_wrapper {
+          gap: 60px;
+        }
+        .text-blocks_block_wrapper {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          max-width: 480px;
+          margin: 0 auto;
+        }
+        .block_text {
+          gap: 20px;
+        }
+        .block_slash {
+          height: 63px;
+        }
+        .short_slash {
+          height: 42px;
+        }
+        .slash_text_wrapper {
+          gap: 11px;
+        }
+        .blocks_title_text {
+          color: #010101;
+          font-family: 'Work Sans';
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          max-width: 283px;
+        }
+        .block_text_item {
+          font-family: 'Work Sans';
+          font-size: 16px;
+          font-weight: 300;
+        }
+        .block_text_texts {
+          gap: 12px;
+        }
+      }
+      @media (max-width: 550px) {
+        .blocks_img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
   </body>
 </html>
